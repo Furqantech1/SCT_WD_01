@@ -1,4 +1,3 @@
-
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('mainNav');
     if (window.scrollY > 50) {
@@ -45,9 +44,10 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+// === MODIFIED BLOCK START ===
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault();
+        // e.preventDefault(); // This line has been removed to allow scrolling
         
         document.querySelectorAll('.nav-link').forEach(item => {
             item.classList.remove('active', 'active-permanent');
@@ -56,6 +56,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
         this.classList.add('active', 'active-permanent');
     });
 });
+// === MODIFIED BLOCK END ===
 
 document.querySelectorAll('.cta-button').forEach(button => {
     button.addEventListener('mouseenter', function() {

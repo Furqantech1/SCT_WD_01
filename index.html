@@ -8,20 +8,18 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation Menu -->
     <nav id="mainNav">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="#hero" class="logo">
                 <i class="fas fa-code"></i>Responsive<span>DEV</span>
             </a>
             
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             
             <button class="cta-button desktop-cta">Get Started</button>
@@ -35,13 +33,13 @@
     </nav>
     
     <div class="container">
-        <section class="hero">
+        <section class="hero" id="hero">
             <h1>Interactive Navigation Menu</h1>
             <p>A modern navigation bar that changes style on scroll and when hovering over menu items</p>
             <button class="cta-button">Explore Features</button>
         </section>
         
-        <section class="content-section">
+        <section class="content-section" id="services">
             <h2>Our Services</h2>
             <div class="cards">
                 <div class="card">
@@ -62,27 +60,75 @@
             </div>
         </section>
         
-        <section class="content-section">
-            <h2>How It Works</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <i class="fas fa-mouse-pointer"></i>
-                    <h3>Interactive Navigation</h3>
-                    <p>Hover over menu items to see smooth interactive effects with animated underlines and color transitions.</p>
+        <section class="content-section" id="projects">
+            <h2>Our Recent Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-featured e-commerce site with a custom CMS and integrated payment solutions for a seamless shopping experience.</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-arrows-alt-v"></i>
-                    <h3>Scroll Effects</h3>
-                    <p>The navigation bar dynamically changes its appearance as you scroll, becoming more opaque with enhanced shadows.</p>
+                <div class="card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Corporate Portfolio</h3>
+                    <p>A sleek, professional portfolio website for a major design firm, focusing on visual impact and brand identity.</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile Responsive</h3>
-                    <p>Fully responsive design with hamburger menu for mobile devices, ensuring great experience across all screen sizes.</p>
+                <div class="card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Event Booking App</h3>
+                    <p>A cross-platform mobile app that allows users to discover, book, and manage tickets for local events.</p>
                 </div>
             </div>
         </section>
-    </div>
+        <section class="content-section" id="blog">
+            <h2>From Our Blog</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h3>5 UI/UX Trends for 2025</h3>
+                    <p>Discover the latest trends in user interface design, from 3D elements to advanced micro-interactions.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Why Headless CMS is the Future</h3>
+                    <p>An in-depth look at how decoupling your frontend and backend can lead to faster, more flexible websites.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Optimizing for Core Web Vitals</h3>
+                    <p>A practical guide to improving your site's performance and SEO ranking by focusing on Google's Core Web Vitals.</p>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Have a project in mind? We'd love to hear from you. Reach out to us using the details below or fill out the contact form.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Avenue, Belagavi, Karnataka, India</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@responsivedev.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 12345 67890</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+        </div>
     
     <footer>
         <p>Interactive Navigation Menu &copy; 2025 | Developed by FURQAN NAIKWADI</p>

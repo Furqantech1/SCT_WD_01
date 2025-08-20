@@ -201,7 +201,7 @@ nav.scrolled {
 
 .content-section h2 {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #4ecca3;
     text-align: center;
 }
@@ -290,6 +290,93 @@ nav.scrolled {
     line-height: 1.6;
 }
 
+/* === NEW CONTACT SECTION STYLES START === */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-info, .contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #b0b0b0;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.contact-info .info-item i {
+    font-size: 20px;
+    color: #4ecca3;
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-info .info-item span {
+    color: #b0b0b0;
+    font-size: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4ecca3;
+    background: rgba(78, 204, 163, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .cta-button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+/* === NEW CONTACT SECTION STYLES END === */
+
+
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -300,6 +387,13 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
